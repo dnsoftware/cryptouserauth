@@ -4,6 +4,7 @@ go 1.22
 
 require (
 	github.com/brianvoe/gofakeit/v6 v6.23.2
+	github.com/dnsoftware/cryptoprotos v0.0.0-20250710094844-e7e10af2492a
 	github.com/fatih/color v1.15.0
 	github.com/golang-jwt/jwt/v5 v5.0.0
 	github.com/golang-migrate/migrate/v4 v4.16.2
