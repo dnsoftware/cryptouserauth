@@ -1,5 +1,5 @@
 env: "local"
-storage_path: "./storage/sso.db"
+storage_path: "/home/dmitry/projects/cryptomarket/microservices/userauth/internal/storage/sso.db"
 grpc:
   port: 44044
   timeout: 10h
