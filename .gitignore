@@ -1,0 +1,6 @@
+/storage/
+/cmd/sso/sso
+/**/.idea
+/cmd/migrator/migrator
+/internal/storage/storage
+/internal/storage/sso.db
