@@ -6,9 +6,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"grpc-service-ref/internal/app"
-	"grpc-service-ref/internal/config"
-	"grpc-service-ref/internal/lib/logger/handlers/slogpretty"
+	"github.com/dnsoftware/userauth/internal/app"
+	"github.com/dnsoftware/userauth/internal/config"
+	"github.com/dnsoftware/userauth/internal/lib/logger/handlers/slogpretty"
 )
 
 const (

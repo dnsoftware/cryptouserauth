@@ -4,13 +4,14 @@ import (
 	"testing"
 	"time"
 
-	"grpc-service-ref/tests/suite"
+	"github.com/dnsoftware/userauth/tests/suite"
 
 	"github.com/brianvoe/gofakeit/v6"
-	ssov1 "github.com/dnsoftware/protos/cryptomarket/gen/go/sso"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+
+	ssov1 "github.com/dnsoftware/cryptoprotos/gen/go/sso"
 )
 
 const (

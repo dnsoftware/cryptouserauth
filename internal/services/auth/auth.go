@@ -7,10 +7,10 @@ import (
 	"log/slog"
 	"time"
 
-	"grpc-service-ref/internal/domain/models"
-	"grpc-service-ref/internal/lib/jwt"
-	"grpc-service-ref/internal/lib/logger/sl"
-	"grpc-service-ref/internal/storage"
+	"github.com/dnsoftware/userauth/internal/domain/models"
+	"github.com/dnsoftware/userauth/internal/lib/jwt"
+	"github.com/dnsoftware/userauth/internal/lib/logger/sl"
+	"github.com/dnsoftware/userauth/internal/storage"
 
 	"golang.org/x/crypto/bcrypt"
 )

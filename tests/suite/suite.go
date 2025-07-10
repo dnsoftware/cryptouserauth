@@ -7,11 +7,12 @@ import (
 	"strconv"
 	"testing"
 
-	"grpc-service-ref/internal/config"
+	"github.com/dnsoftware/userauth/internal/config"
 
-	ssov1 "github.com/dnsoftware/protos/cryptomarket/gen/go/sso"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
+
+	ssov1 "github.com/dnsoftware/cryptoprotos/gen/go/sso"
 )
 
 type Suite struct {

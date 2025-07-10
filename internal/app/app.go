@@ -4,9 +4,9 @@ import (
 	"log/slog"
 	"time"
 
-	grpcapp "grpc-service-ref/internal/app/grpc"
-	"grpc-service-ref/internal/services/auth"
-	"grpc-service-ref/internal/storage/sqlite"
+	grpcapp "github.com/dnsoftware/userauth/internal/app/grpc"
+	"github.com/dnsoftware/userauth/internal/services/auth"
+	"github.com/dnsoftware/userauth/internal/storage/sqlite"
 )
 
 type App struct {

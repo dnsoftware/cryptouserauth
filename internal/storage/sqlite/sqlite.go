@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 
-	"grpc-service-ref/internal/domain/models"
-	"grpc-service-ref/internal/storage"
+	"github.com/dnsoftware/userauth/internal/domain/models"
+	"github.com/dnsoftware/userauth/internal/storage"
 
 	"github.com/mattn/go-sqlite3"
 )

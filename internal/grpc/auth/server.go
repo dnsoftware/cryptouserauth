@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"grpc-service-ref/internal/services/auth"
-	"grpc-service-ref/internal/storage"
+	"github.com/dnsoftware/userauth/internal/services/auth"
+	"github.com/dnsoftware/userauth/internal/storage"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
