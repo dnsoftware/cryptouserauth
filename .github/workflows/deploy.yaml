@@ -18,9 +18,6 @@ jobs:
       CONFIG_PATH: /root/apps/grpc-auth/config/prod.yaml
 
     steps:
-      - name: Show cryptoprotos version
-        run: |
-          cat go.mod | grep cryptoprotos
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
@@ -32,6 +29,9 @@ jobs:
             echo "error: Tag '${{ github.event.inputs.tag }}' not found"
             exit 1
           fi
+      - name: Show cryptoprotos version
+        run: |
+          cat go.mod | grep cryptoprotos
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
