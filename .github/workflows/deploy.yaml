@@ -46,6 +46,7 @@ jobs:
         run: |
           go mod download
           go build -o grpc-auth ./cmd/sso
+          echo "$DEPLOY_SSH_KEY"
       - name: Build migrator
         run: |
           go build -o migrator ./cmd/migrator
