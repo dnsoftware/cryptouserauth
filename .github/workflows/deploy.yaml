@@ -18,6 +18,9 @@ jobs:
       CONFIG_PATH: /root/apps/grpc-auth/config/prod.yaml
 
     steps:
+      - name: Show cryptoprotos version
+        run: |
+          cat go.mod | grep cryptoprotos
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
