@@ -1,6 +1,6 @@
 module github.com/dnsoftware/cryptouserauth
 
-go 1.22
+go 1.24
 
 require (
 	github.com/brianvoe/gofakeit/v6 v6.23.2
