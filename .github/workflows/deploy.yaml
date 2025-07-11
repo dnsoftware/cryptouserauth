@@ -3,10 +3,15 @@ name: Deploy App
 on:
   workflow_dispatch:
     inputs:
-      tag:
-        description: 'Tag to deploy'
-        required: false
+      branch:
+        type: string
+        description: 'Branch to deploy'
         default: 'main'
+        required: false
+#        tag:
+#        description: 'Tag to deploy'
+#        required: false
+#        default: 'main'
 
 jobs:
   deploy:
