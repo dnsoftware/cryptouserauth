@@ -47,7 +47,6 @@ jobs:
         run: |
           go mod download
           go build -o grpc-auth ./cmd/sso
-          echo "$DEPLOY_SSH_KEY"
       - name: Build migrator
         run: |
           go build -o migrator ./cmd/migrator
@@ -57,7 +56,15 @@ jobs:
           echo "$DEPLOY_SSH_KEY" > deploy_key.pem
           echo "$DEPLOY_SSH_KEY"
           chmod 600 deploy_key.pem
-          ssh -i deploy_key.pem -o StrictHostKeyChecking=no ${{ env.HOST }} "mkdir -p ${{ env.DEPLOY_DIRECTORY }}"
+          ssh -i deploy_key.pem -o StrictHostKeyChecking=no ${{ env.HOST }} "
+            mkdir -p ${{ env.DEPLOY_DIRECTORY }} 
+            if ! command -v rsync &>/dev/null; then
+              echo 'Устанавливаем rsync...'
+              sudo apt-get update && sudo apt-get install -y rsync
+            else
+              echo 'rsync уже установлен'
+            fi
+          "
           rsync -avz -e 'ssh -i deploy_key.pem -o StrictHostKeyChecking=no' --exclude='.git' ./ ${{ env.HOST }}:${{ env.DEPLOY_DIRECTORY }}
           rsync -avz -e 'ssh -i deploy_key.pem -o StrictHostKeyChecking=no' ./migrator ${{ env.HOST }}:${{ env.DEPLOY_DIRECTORY }}/migrator
         env:
