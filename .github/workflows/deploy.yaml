@@ -31,7 +31,7 @@ jobs:
           fi
       - name: Show cryptoprotos version
         run: |
-          cat go.mod | grep cryptoprotos
+          cat go.mod
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
