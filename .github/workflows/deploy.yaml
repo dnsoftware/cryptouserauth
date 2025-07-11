@@ -5,7 +5,8 @@ on:
     inputs:
       tag:
         description: 'Tag to deploy'
-        required: true
+        required: false
+        default: 'main'
 
 jobs:
   deploy:
