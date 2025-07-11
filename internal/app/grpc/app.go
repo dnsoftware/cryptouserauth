@@ -6,7 +6,7 @@ import (
 	"log/slog"
 	"net"
 
-	authgrpc "github.com/dnsoftware/userauth/internal/grpc/auth"
+	authgrpc "github.com/dnsoftware/cryptouserauth/internal/grpc/auth"
 
 	"github.com/grpc-ecosystem/go-grpc-middleware/v2/interceptors/logging"
 	"github.com/grpc-ecosystem/go-grpc-middleware/v2/interceptors/recovery"

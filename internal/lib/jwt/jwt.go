@@ -3,7 +3,7 @@ package jwt
 import (
 	"time"
 
-	"github.com/dnsoftware/userauth/internal/domain/models"
+	"github.com/dnsoftware/cryptouserauth/internal/domain/models"
 
 	"github.com/golang-jwt/jwt/v5"
 )

@@ -7,10 +7,10 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/dnsoftware/userauth/internal/domain/models"
-	"github.com/dnsoftware/userauth/internal/lib/jwt"
-	"github.com/dnsoftware/userauth/internal/lib/logger/sl"
-	"github.com/dnsoftware/userauth/internal/storage"
+	"github.com/dnsoftware/cryptouserauth/internal/domain/models"
+	"github.com/dnsoftware/cryptouserauth/internal/lib/jwt"
+	"github.com/dnsoftware/cryptouserauth/internal/lib/logger/sl"
+	"github.com/dnsoftware/cryptouserauth/internal/storage"
 
 	"golang.org/x/crypto/bcrypt"
 )

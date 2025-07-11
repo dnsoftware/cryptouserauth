@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dnsoftware/userauth/tests/suite"
+	"github.com/dnsoftware/cryptouserauth/tests/suite"
 
 	"github.com/brianvoe/gofakeit/v6"
 	"github.com/golang-jwt/jwt/v5"

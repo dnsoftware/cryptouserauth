@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/dnsoftware/userauth/internal/domain/models"
-	"github.com/dnsoftware/userauth/internal/storage"
+	"github.com/dnsoftware/cryptouserauth/internal/domain/models"
+	"github.com/dnsoftware/cryptouserauth/internal/storage"
 
 	"github.com/mattn/go-sqlite3"
 )

@@ -1,4 +1,4 @@
-module github.com/dnsoftware/userauth
+module github.com/dnsoftware/cryptouserauth
 
 go 1.22
 

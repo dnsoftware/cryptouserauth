@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/dnsoftware/userauth/internal/services/auth"
-	"github.com/dnsoftware/userauth/internal/storage"
+	"github.com/dnsoftware/cryptouserauth/internal/services/auth"
+	"github.com/dnsoftware/cryptouserauth/internal/storage"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

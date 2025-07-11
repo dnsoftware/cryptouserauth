@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/dnsoftware/userauth/internal/config"
+	"github.com/dnsoftware/cryptouserauth/internal/config"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

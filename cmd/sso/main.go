@@ -6,9 +6,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/dnsoftware/userauth/internal/app"
-	"github.com/dnsoftware/userauth/internal/config"
-	"github.com/dnsoftware/userauth/internal/lib/logger/handlers/slogpretty"
+	"github.com/dnsoftware/cryptouserauth/internal/app"
+	"github.com/dnsoftware/cryptouserauth/internal/config"
+	"github.com/dnsoftware/cryptouserauth/internal/lib/logger/handlers/slogpretty"
 )
 
 const (
